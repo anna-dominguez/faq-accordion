@@ -4,8 +4,8 @@ import plus from '../images/icon-plus.svg'
 
 import './Section.scss'
 
-const Section = ({ title, description, isLast }) => {
-  const [isOpen, setIsOpen] = useState(false)
+const Section = ({ title, description, isLast, isFirst }) => {
+  const [isOpen, setIsOpen] = useState(isFirst)
   return (
     <section>
       <div className="title" onClick={() => setIsOpen(!isOpen)}>

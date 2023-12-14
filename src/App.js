@@ -39,6 +39,7 @@ function App() {
           <Section
             key={`faq-${index}`}
             isLast={index < faqs.length - 1}
+            isFirst={index === 0 ? true : false}
             title={title}
             description={description}
           />
